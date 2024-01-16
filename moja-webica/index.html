@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Želiš li ići sa mnom na date?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 style="font-family: Arial, Helvetica, sans-serif; text-align: center;"><i>Želiš li ići sa mnom na date?</i></h1>
+    </div>
+
+    <img src="../drugo_predavanje/giphy.gif" alt="gif" width="500" height="500">
+
+    <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+    </div>
+
+    <script>
+        function nextPage() {
+            window.location.href = "yes.html";
+        }
+
+        function moveButton() {
+            var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+            var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+            document.getElementById('noButton').style.left = x + 'px';
+            document.getElementById('noButton').style.top = y + 'px';
+        }
+    </script>
+</body>
+</html>

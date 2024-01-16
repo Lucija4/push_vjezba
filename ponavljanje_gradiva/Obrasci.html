@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrasci</title>
+</head>
+<body>
+    <h1>Obrasci</h1>
+    <p>Atribut action specificira adresu URL na koju se podaci obrasca šalju.</p>
+    <br>
+    <p>Atribut method specificira metodu slanja podataka na poslužitelj.
+    <br>Vrijednost atributa method može biti: get i post. 
+    <br>Za pravilno funkcioniranje obrasca obavezni su atributi action i method. Ostali atributi koriste se po potrebi.</p>
+
+    <form name="Obrazac1" action="" method="post">
+    <p><input type="text" size="30"></p>
+    <p><input type="email" required></p>
+    <p><input type="password" maxlength="8"></p>
+    <p><input type="checkbox" checked></p>
+    <p><input type="radio" disabled></p>
+    <p><input type="file"></p>
+    <p><input type="reset" value="Poništi"></p>
+    <p><input type="submit" value="Pošalji"></p>
+    </form>
+    <hr>
+    <h3>Primjer elementa TEXTAREA</h3>
+    <p>Za kreiranje polja koja omogućavaju unos više redova teksta koristimo element <strong>textarea</strong>.</p>
+    <p>Dodan je atribut MAXLENGTH 100 znakova.</p>
+    <form name="obrazac2" action="" method="post">
+        <textarea name="" cols="30" rows="10" maxlength="100"></textarea>
+    </form>
+    <hr>
+
+    <h3>Element SELECT i OPTION</h3>
+    <p>Ako želimo omogućiti izbor opcija ponuđenih kao padajući izbornik, koristimo elemente seleci i option.</p>
+    <p>Primjer padajućeg izbornika</p>
+    <form name="obrazac3" action="" method="post">
+        <select name="grad">
+            <option value="zadar">Zadar</option>
+            <option value="zagreb">Zagreb</option>
+            <option value="bjelovar">Bjelovar</option>
+            <option value="osijek">Osijek</option>
+            <option value="rijeka">Rijeka</option>
+        </select>
+    </form>
+    <hr>
+    
+    <h2>Primjer obrasca sa elementima LABEL</h2>
+    <form name="obrazac4" action="" method="post" enctype="multipart/form-data" autocomplete="off">
+    
+    <p>
+        <label for="ime">Ime i prezime</label><br>
+        <input id="ime" name="imeiprezime" type="text" size="30" required>
+    </p>
+
+    <p>
+        <label for="mail">E-mail adresa</label><br>
+        <input id="mail" name="email" type="email">
+    </p>
+
+    <p>
+        <label for="zaporka">Vaša zaporka</label><br>
+        <input id="zaporka" name="pass" type="password">
+    </p>
+
+    <p>
+        <label for="dokument">Priložite dokument</label><br>
+        <input id="dokument" name="dokument" type="file">
+    </p>
+
+    <p>
+        <input name="submit_btn" type="submit" value="Pošalji podatke">
+    </p>
+    </form>
+</body>
+</html>

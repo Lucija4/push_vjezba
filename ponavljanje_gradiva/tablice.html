@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablice</title>
+</head>
+<body>
+    <h1>Tablice</h1>
+    <p>Tablice su složeni strukturirani elementi koje koristimo za tablično prikazivanje sadržaja. Njihova primjena na web stranicama slična je kao i u drugim medijima, kada neke sadržaje moramo prikazati organizirane u redove i stupce.<br> Nerijetke na stranicama trebamo prikazati različite izračune, proračune, statističke podatke, cjenike, kalendare i slično.</p>
+
+    <h2>Struktura tablice</h2>
+    <p>Samu tablicu definiramo elementom TABLE. Unutar tog elementa izrađujemo strukturu. Tablice se sastoje od redova i stupaca.
+     Za definiranje redova koristimo element TR (TABLE ROW). Stupci se ne prikazuju kao poseban element, već ih definiramo brojem
+    ćelija u redu. Koliko stupaca želi u tablici, toliko ćelija moramo imati u svakome redu. Za definiranje ćelija koristimo
+    elemente TD(TABLE DATA) ili TH (TABLE HEADER), ovisno o namjeni ćelija.</p>
+
+    <h4>Primjer tablice</h4>
+    <table border="1">
+        <tr>
+            <th>Ime</th>
+            <td>red 1, ćelija 1</td>
+            <td>red 1, ćelija 2</td>
+            <td>red 1, ćelija 3</td>
+        </tr>
+        <tr>
+            <th>Prezime</th>
+            <td>red 2, ćelija 1</td>
+            <td>red 2, ćelija 2</td>
+            <td>red 2, ćelija 3</td>
+        </tr>
+        <tr>
+            <th>Broj</th>
+            <td>red 3, ćelija 1</td>
+            <td>red 3, ćelija 2</td>
+            <td>red 3, ćelija 3</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <caption>Popis korisnika</caption>
+        <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Zanimanje</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Anić</td>
+            <td>pjevačica</td>
+        </tr>
+        <tr>
+            <td>Petar</td>
+            <td>Petrić</td>
+            <td>glumica</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <caption>PRIMJER SPAJANJA ILI PROŠIRENJA ĆELIJA U TABLICI</caption>
+        <tr>
+            <td colspan="3">red 1 ćelija 1</td>
+        </tr>
+        <tr>
+            <td>red 2 ćelija 4</td>
+            <td>red 2 ćelija 5</td>
+            <td>red 2 ćelija 6</td>
+        </tr>
+        <tr>
+            <td>red 3 ćelija 7</td>
+            <td colspan="2">red 3 ćelija 8</td>
+        </tr>
+        <tr>
+            <td rowspan="2">red 4 ćelija 9</td>
+            <td>red 4 ćelija 10</td>
+            <td>red 4 ćelija 11</td>
+        </tr>
+        <tr>
+            <td>red 5 ćelija 12</td>
+            <td>red 5 ćelija 13</td>
+        </tr>
+    </table> 
+</body>
+</html>
